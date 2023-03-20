@@ -1,0 +1,196 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office" lang="ru">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="x-apple-disable-message-reformatting">
+    <!-- <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" /> -->
+    <title>Dugimail</title>
+</head>
+<body>
+
+<style type="text/css">
+    #slider{
+        position:relative;
+        text-align: center;
+        top: 10px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #sliders{
+        margin: 0;
+        padding: 0;
+    }
+
+    #sliders article{
+       /* width: 20%;*/
+        width: 100%;
+        /*max-width: 400px;*/
+        float: left;
+    }
+
+    #sliders .image{
+        width: 100%;  
+        line-height: 0;
+    }
+
+    #overflow {
+        margin: 0 auto;   
+       /* width: 20%;*/
+       width: 100%;
+       max-width: 400px;
+        overflow: hidden;
+    }
+   
+    /* скрывает инпуты на странице */
+
+    #slider input { 
+        display: none !important;
+      
+    }
+
+    .image a {
+        display:none!important;
+    }
+
+
+    #switch1:checked ~ #sliders .image article:nth-child(1) a{
+     display: block !important;
+    }
+    #switch2:checked ~ #sliders .image article:nth-child(2) a{
+     display: block !important;
+    }
+    #switch3:checked ~ #sliders .image article:nth-child(3) a{
+     display: block !important;
+    }
+    #switch4:checked ~ #sliders .image article:nth-child(4) a{
+     display: block !important;
+    }
+    #switch5:checked ~ #sliders .image article:nth-child(5) a{
+     display: block !important;
+    }
+
+
+
+    #active label{
+        border-radius: 10px;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: #ffffff;
+    }
+
+    #active {
+        margin: 23% 0 0 ;
+        text-align: center;
+    }
+
+    #active label{
+        background: #5d1900 ;
+        border: 3px solid #5d1900;
+        border-color: #5d1900;
+       
+    }
+
+    label, a {  /* изменение курсора при наведении */
+        cursor: pointer;
+    }
+
+    #switch1:checked ~ #active label:nth-child(1),
+    #switch2:checked ~ #active label:nth-child(2),
+    #switch3:checked ~ #active label:nth-child(3),
+    #switch4:checked ~ #active label:nth-child(4),
+    #switch5:checked ~ #active label:nth-child(5){
+        background: #ffffff !important;  
+    }
+
+    a{
+        -webkit-transition: all 1.5s ease-in;
+        -moz-transition: all 1.5s ease-in;
+        -ms-transition: all 1.5s ease-in;
+        -o-transition: all 1.5s ease-in;
+    }
+   
+    #active label:hover{ /* прозрачность стрелок при наведении */
+        opacity: 0.6;
+    } 
+     #active label{ /* прозрачность стрелок при отводе */
+       transition:opacity 0.2s ease-out;
+    } 
+
+</style>
+
+        <div class="all">
+                <article id="slider">
+                    <input type="radio" checked name="slider" id="switch1">
+                    <input type="radio" name="slider" id="switch2">
+                    <input type="radio" name="slider" id="switch3">
+                    <input type="radio" name="slider" id="switch4">
+                    <input type="radio" name="slider" id="switch5">
+                    <div id="sliders">
+                        <div id="overflow">
+                            <div class="image">
+                                <article>
+                                                                    
+                                        <a href="https://www.youtube.com/watch?v=99nzuUX1dYI&t=1826s" target="_blank"; style=" -webkit-text-size-adjust:none; padding: 0 0 0 0; text-align: center; "  > 
+                                        <img src="https://i.ibb.co/vH9nTGM/video1.png" alt="video1" border="0" width="100%"  style=" font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 380px; width: 100%;  display: block ;" > 
+                                        </a>     
+                                                     
+                                </article>
+                                <article> 
+                                    
+                                        <a href="https://www.youtube.com/watch?v=99nzuUX1dYI&t=1826s" target="_blank"; style=" -webkit-text-size-adjust:none; padding: 0 0 0 0; text-align: center; "  > 
+                                        <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="video1" border="0" width="100%"  style=" font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 380px; width: 100%; display: block ; "> 
+                                        </a>   
+                                       
+                                </article>
+                                <article>
+                                    
+                                    <a href="https://www.youtube.com/watch?v=99nzuUX1dYI&t=1826s" target="_blank"; style=" -webkit-text-size-adjust:none; padding: 0 0 0 0; text-align: center; "  > 
+                                        <img src="https://i.ibb.co/fSbtCpx/img6.png" alt="video1" border="0" width="100%"  style=" font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 380px; width: 100%; display: block ; "> 
+                                    </a> 
+                                        
+                                </article>
+                                <article>
+                                    
+                                     <a href="https://www.youtube.com/watch?v=99nzuUX1dYI&t=1826s" target="_blank"; style=" -webkit-text-size-adjust:none; padding: 0 0 0 0; text-align: center; "  > 
+                                        <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="video1" border="0" width="100%"  style=" font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 380px; width: 100%; display: block ;"> 
+                                    </a> 
+                                        
+                                </article>
+                                <article>
+                                    
+                                    <a href="https://www.youtube.com/watch?v=99nzuUX1dYI&t=1826s" target="_blank"; style=" -webkit-text-size-adjust:none; padding: 0 0 0 0; text-align: center; "  > 
+                                        <img src="https://i.ibb.co/fSbtCpx/img6.png" alt="video1" border="0" width="100%"  style=" font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 380px;  width: 100%; display: block ; "> 
+                                    </a> 
+                                        
+                                </article>
+                              
+                            </div>
+                        </div>
+                    </div>
+        <!--            <div id="controls">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
+                        <label for="switch3"></label>
+                        <label for="switch4"></label>
+                        <label for="switch5"></label>
+                    </div>  -->
+                    <div id="active">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
+                        <label for="switch3"></label>
+                        <label for="switch4"></label>
+                        <label for="switch5"></label>
+                    </div>                   
+                </article> 
+        </div>
+    </body>
+</html>
+
