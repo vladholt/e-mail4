@@ -28,15 +28,12 @@
         padding: 0;
       }
 
-      #outlook a {
-        padding: 0;
-      }
-
       a {
         text-decoration: none !important;
         text-underline: none !important;
         color: #e8fbfa;
         font-size: 16px;
+        padding: 0;
       }
       
       h1,h2,h3,h4 {
@@ -167,11 +164,16 @@
         #slider2 input {  /* скрывает инпуты на странице */
             display: none !important;
         }
-
+        
+        
         .image1 > div,
         .image2 > div{
             display:none !important;
         }
+        
+        
+        
+        
    
     /*slider1 hendler */
 
@@ -202,6 +204,13 @@
         }
         #switch23:checked ~ #sliders2 .image2 > div:nth-child(3) {
          display: block !important;
+        }
+        
+    /*  slider 2 store   */
+        #switch21:checked ~ .store, 
+        #switch22:checked ~ .store, 
+        #switch23:checked ~ .store{
+         display: table-cell !important;
         }
         
         #active1,
@@ -841,7 +850,7 @@
                               <tr>
                                <td style="Margin:0 0 0 0; padding: 0 0 113px 0; line-height:0px; font-size:0px;" valign="center"> 
                
-                                  <div id="slider2" style="line-height:0px; font-size:0px;">
+                                  <div style="line-height:0px; font-size:0px;">
                                       <!--[if mso]><p style="display: none;"><![endif]-->
                                       <input type="radio" checked name="StoreSlider" id="switch21" style="display: none !important; max-height: 0; visibility: hidden;line-height:1px; font-size:0px;"/>
                                       <!--[if mso]></p><![endif]-->
@@ -860,15 +869,16 @@
                                       </div>
                                       
                                       
-                                       <div  style="width:24.8%; 
-                                        display: table-cell;
+                                       <div class="store"  
+                                       style="width:24.8%; 
+                                        display: none;
                                         padding: 0 0 0 0; 
                                         Margin: 0 0 0 0; 
                                         vertical-align: middle;"> 
-                                        <figure>
-                                           <img src="https://i.ibb.co/yqGnXZq/store2.png" alt="STORE" border="0" width="100%" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width:178px; width: 100%; height:auto; display: inline-block; padding: 0 0 0 0; Margin: 0 0 0 0; "/>
-                                        </figure>
-                                             
+                                       
+                                        <img  src="https://i.ibb.co/yqGnXZq/store2.png" alt="STORE" border="0" width="100%" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width:178px; width: 100%; height:auto; display: inline-block; padding: 0 0 0 0; 
+                                        Margin: 0 0 0 0; "/>
+                                        
                                       </div>
                               
                                       <!--<![endif]-->
@@ -880,6 +890,18 @@
                                                     <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:100%; max-width: 434px;" >
                                                         <tr>
                                                             <td align="center" style="padding:38px 25px 38px 25px; Margin: 0 0 0 0; text-align: center;">
+                                                                <div style="padding:0; margin: 0;">                <!--[if !gte mso 9]> <!-- -->
+                                                                <img src="https://i.ibb.co/fSbtCpx/img6.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;"/> 
+                                                               <!-- <![endif]-->   
+                                                               <!--[if gte mso 9]> 
+                                                                  <img src="https://i.ibb.co/fSbtCpx/img6.png" alt="Nice img1" border="0" width="355" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 355px;"/>  
+                                                               <![endif]-->  
+                                                              
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td  style="padding:38px 25px 38px 25px; Margin: 0 0 0 0; text-align: center;">
                                                                 <div style="padding:0; margin: 0 auo;">                <!--[if !gte mso 9]> <!-- -->
                                                                 <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;"/> 
                                                               <!-- <![endif]-->   
@@ -887,25 +909,14 @@
                                                                   <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="Nice img1" border="0" width="355" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 355px;"/>  
                                                               <![endif]-->  
                                                                
+                                                                  
                                                                 </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td  style="padding:38px 25px 38px 25px; Margin: 0 0 0 0; text-align: center;">
-                                                                 <div style="padding:0; margin: 0;">                <!--[if !gte mso 9]> <!-- -->
-                                                                <img src="https://i.ibb.co/fSbtCpx/img6.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;"/> 
-                                                               <!-- <![endif]-->   
-                                                               <!--[if gte mso 9]> 
-                                                                  <img src="https://i.ibb.co/fSbtCpx/img6.png" alt="Nice img1" border="0" width="355" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 355px;"/>  
-                                                               <![endif]-->  
-                                                               
-                                                                </div>
-                                                                
                                                             </td>
                                                         </tr>
                                                     </table>       
                                                   </div>
-                                                  <div>                                          
+                                                  <div>   
+                                                  
                                                     <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:100%; max-width: 434px;" >
                                                         <tr>
                                                             <td  style="padding:38px 25px 38px 25px; Margin: 0 0 0 0; text-align: center;">
@@ -937,7 +948,19 @@
                                                     <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:100%; max-width: 434px;" >
                                                         <tr>
                                                             <td  style="padding:38px 25px 38px 25px; Margin: 0 0 0 0; text-align: center;">
-                                                                 
+                                                                <div style="padding:0; margin: 0 auo;">                <!--[if !gte mso 9]> <!-- -->
+                                                                <img src="https://i.ibb.co/fSbtCpx/img6.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;"/> 
+                                                               <!-- <![endif]-->   
+                                                               <!--[if gte mso 9]> 
+                                                                  <img src="https://i.ibb.co/fSbtCpx/img6.png" alt="Nice img1" border="0" width="355" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 355px;"/>  
+                                                               <![endif]-->  
+                                                               
+                                                               
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td  style="padding:38px 25px 38px 25px; Margin: 0 0 0 0;text-align: center;">
                                                                 <div style="padding:0; margin: 0 auo;">                <!--[if !gte mso 9]> <!-- -->
                                                                 <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;"/> 
                                                               <!-- <![endif]-->   
@@ -947,20 +970,6 @@
                                                                
                                                                   
                                                                 </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td  style="padding:38px 25px 38px 25px; Margin: 0 0 0 0;text-align: center;">
-                                                              <div style="padding:0; margin: 0 auo;">                <!--[if !gte mso 9]> <!-- -->
-                                                                <img src="https://i.ibb.co/fSbtCpx/img6.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;"/> 
-                                                               <!-- <![endif]-->   
-                                                               <!--[if gte mso 9]> 
-                                                                  <img src="https://i.ibb.co/fSbtCpx/img6.png" alt="Nice img1" border="0" width="355" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 355px;"/>  
-                                                               <![endif]-->  
-                                                               
-                                                               
-                                                                </div>
-
                                                             </td>
                                                         </tr>
                                                     </table>                      
