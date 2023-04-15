@@ -1,5 +1,4 @@
-<!DOCTYPE html
-  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
   xmlns:o="urn:schemas-microsoft-com:office:office" lang="ru">
 
@@ -7,13 +6,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="x-apple-disable-message-reformatting">
+    <meta name="x-apple-disable-message-reformatting"/>
     <!-- <meta name="color-scheme" content="light dark" />
     <meta name="supported-color-schemes" content="light dark" /> -->
-    <title>Dugimail</title>
+    <title>4-th email</title>
     <style type="text/css">
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
+      @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+     
       html { -webkit-text-size-adjust:none; -ms-text-size-adjust: none;}
 
       table {
@@ -33,7 +33,8 @@
       }
 
       a {
-        text-decoration: none;
+        text-decoration: none !important;
+        text-underline: none !important;
         color: #e8fbfa;
         font-size: 16px;
       }
@@ -52,20 +53,13 @@
           width:38% !important;
           padding-top: 65px;
         }
-
         #slider1 {
-          vertical-align: center;
-         
-        }
-      
+          vertical-align: center; 
+        }    
         .mounting-section__description p{
             max-width: 380px !important;
             text-align: left !important;
         }
-
-        
-        
-
       }
     
       @media screen and (max-width: 699.98px) {
@@ -77,15 +71,10 @@
          .left-column td{
           text-align: left !important;
         }
-
-       
-
       }
 
       
-      @media screen and (max-width: 699.98px) {
-
-      
+      @media screen and (max-width: 699.98px) { 
         .mobile-hidden{
           display: none;
         }
@@ -120,7 +109,7 @@
           max-width: 100% !important;
         }
       }
-/*      */
+
       /* Custom Dark Mode Colors */
       /* :root {
         color-scheme: light dark;
@@ -143,27 +132,18 @@
 
         #slider1,
         #slider2 {
-            /*position:relative;
-              top: 10px;
-            */
             text-align: center;
             width: 100%;
             padding: 0;
-            margin: 0 auto;
-        }
-
-        #sliders1,
-        #sliders2 {
             margin: 0;
-            padding: 0;
         }
 
         #sliders1 article,
         #sliders2 article {
            /* width: 20%;*/
-            width: 100%;
+        /*    width: 100%;   */
             /*max-width: 400px;*/
-            float: left;
+            /*float: left;*/
         }
 
         #sliders1 .image1,
@@ -174,7 +154,7 @@
 
         #overflow1,
         #overflow2 {
-            margin: 0 auto;   
+            margin: 0;   
            /* width: 20%;*/
            width: 100%;
            max-width: 400px;
@@ -186,52 +166,43 @@
         #slider1 input,
         #slider2 input {  /* скрывает инпуты на странице */
             display: none !important;
-          
         }
 
-        .image1 article,
-        .image2 article {
-
-            display:none!important;
+        .image1 > div,
+        .image2 > div{
+            display:none !important;
         }
    
     /*slider1 hendler */
 
-        #switch1:checked ~ table td #sliders1 .image1 article:nth-child(1) {
+        #switch1:checked ~ table td #sliders1 .image1 > div:nth-child(1) {
          display: block !important;
         }
-        #switch2:checked ~ table td #sliders1 .image1 article:nth-child(2) {
+        #switch2:checked ~ table td #sliders1 .image1 > div:nth-child(2) {
          display: block !important;
         }
-        #switch3:checked ~ table td #sliders1 .image1 article:nth-child(3) {
+        #switch3:checked ~ table td #sliders1 .image1 > div:nth-child(3) {
          display: block !important;
         }
-        #switch4:checked ~ table td #sliders1 .image1 article:nth-child(4) {
+        #switch4:checked ~ table td #sliders1 .image1 > div:nth-child(4) {
          display: block !important;
         }
-        #switch5:checked ~ table td #sliders1 .image1 article:nth-child(5) {
+        #switch5:checked ~ table td #sliders1 .image1 > div:nth-child(5) {
          display: block !important;
         }
 
 
     /*slider2 hendler */
 
-        #switch21:checked ~ #sliders2 .image2 article:nth-child(1) {
+        #switch21:checked ~ #sliders2 .image2 > div:nth-child(1) {
          display: block !important;
         }
-        #switch22:checked ~ #sliders2 .image2 article:nth-child(2) {
+        #switch22:checked ~ #sliders2 .image2 > div:nth-child(2) {
          display: block !important;
         }
-        #switch23:checked ~ #sliders2 .image2 article:nth-child(3) {
+        #switch23:checked ~ #sliders2 .image2 > div:nth-child(3) {
          display: block !important;
         }
-        #switch24:checked ~ #sliders2 .image2 article:nth-child(4) {
-         display: block !important;
-        }
-        #switch25:checked ~ #sliders2 .image2 article:nth-child(5) {
-         display: block !important;
-        }
-
         
         #active1,
         #active2 {
@@ -247,8 +218,7 @@
             border-color: #5d1900;   
             display: inline-block;
             width: 10px;
-            height: 10px;
-            
+            height: 10px;     
         }
 
         #active1 label {
@@ -258,13 +228,15 @@
          #active2 label {
           display: block; 
           margin: 8px 45%;
-          
           text-align: center;
+        /*
+            width: 100%;
+            padding: 0;
+            margin: 0 auto;*/
          }
          #active2 {
           text-align: center;
          }
-
 
         label, a {  /* изменение курсора при наведении */
             cursor: pointer;
@@ -277,9 +249,7 @@
         #switch5:checked ~ table td #active1 label:nth-child(5),
         #switch21:checked ~ #active2 label:nth-child(1),
         #switch22:checked ~ #active2 label:nth-child(2),
-        #switch23:checked ~ #active2 label:nth-child(3),
-        #switch24:checked ~ #active2 label:nth-child(4),
-        #switch25:checked ~ #active2 label:nth-child(5){
+        #switch23:checked ~ #active2 label:nth-child(3){
             background-color: #ffffff !important;  
         }
 
@@ -298,9 +268,6 @@
            transition:opacity 0.2s ease-out;
         } 
 
-        
-
-
         .slider2-controls {
           padding: 0 0 0 0; 
           Margin: 0 0 0 0; 
@@ -308,7 +275,7 @@
           width:11.2%;  
           font-size: 12px;
           display: table-cell;
-          vertical-align: middle;
+          vertical-align: middle;  
         }
 
         .slidr2-store {
@@ -316,7 +283,6 @@
           display: table-cell;
           padding: 0 0 0 0; 
           margin: 0 0 0 0; 
-          width:180px; 
           background-image: url(https://i.ibb.co/Wc1ncGT/store.png); 
           background-size: contain;
           background-repeat: no-repeat; 
@@ -324,22 +290,16 @@
         }
         .slidr2-sliders {
           display: table-cell;
-          width:62%; 
-          
+          width:62%;   
         }
 
-
-
-
-
-
-/*
-        .LabelWraper{
-          display: inline-block;
-          padding: 0 4px 0 4px;
-        }    */
-
     </style>
+
+    <!--[if (mso)|(mso 16)]>
+      <style type="text/css">
+        a {text-decoration: none !important;}
+    </style>
+    <![endif]-->
 
     <!--[if (gte mso 9)|(IE)]>
       <style type="text/css">
@@ -361,614 +321,731 @@
 
   <!--[if (gte mso 9)|(IE)]>
       <style type="text/css">
-         body {background-color: #dde0e1!important;}
+         body {background-color: #dde0e1!important;-webkit-text-size-adjust:none;
+        -ms-text-size-adjust: none;}
          body, table, td, p, a {font-family: sans-serif, Arial, Helvetica!important;}
       </style>
    <![endif]-->
-
-    <center style="width: 100%; table-layout:fixed; background-color: #dde0e1; padding-top: 40px; padding-bottom: 40px; word-break:normal;">
-
-      <!--[if (gte mso 9)|(IE)]>
-      <table style="width: 100%;table-layout:fixed;background-color: #dde0e1;padding-top: 40px; padding-bottom: 40px; word-break:normal;>
+ 
+    <table align="center" border="0" cellspacing="0" cellpadding="0" role = "presentation" style="width: 100%;table-layout:fixed;background-color: #dde0e1; padding-top: 40px; padding-bottom: 40px; word-break:normal;">
       <tr>
-      <td>
-      <![endif]-->
-
-      <!-- Preheader (remove comment) -->
-      <div style="font-size: 0px;color: #fafdfe;line-height: 1px;mso-line-height-rule:exactly;display: none; max-width: 0px; max-height: 0px; opacity: 0; overflow: hidden; mso-hide:all;">
-        Стартовое описание
-      </div>
-      <!-- End Preheader (remove comment) -->
-
-      <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation"
-        style="color:#000000;font-family: 'Poppins',sans-serif, Arial, Helvetica; background-image: url(https://i.ibb.co/bX515Px/bg.png); background-size: cover; background-position: top; background-repeat: no-repeat; background-color: #d2d2d2; Margin:0; padding:0 0 0 0; width: 100%; max-width: 700px; word-break:normal; box-shadow: 0 0 10px rgba(0, 0, 0, .2);">
-          <!--[if mso]>
-          <v:rect xmlns_v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:700px; background-color:#d2d2d2;">
-          <v:fill type="frame" https://i.ibb.co/bX515Px/bg.png" />
-          <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
-          <![endif]-->
-        <tr>
-          <td>
-            <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation"
-            style="color:#000000;font-family: 'Poppins',sans-serif, Arial, Helvetica; Margin:0; padding:0 0 0 0; width: 100%;">
-       
-            <!-- Header --> 
-              <tr>
-                <td style="padding: 0 0 0 0;  background-image:  url(https://i.ibb.co/Pz9nNDd/header-img.png);  background-size: cover; background-position: right; Margin:0; padding:0; width: 100%; max-width:100%; height: 300px;" valign="top">
-                   <!--[if mso]>
-                    <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 450pt; height: 150pt;" src="https://i0.wp.com/techacute.com/wp-content/uploads/2019/10/how-to-find-royalty-free-images-on-google-1.png" />     
-                    <v:rect xmlns_v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:700px; background-color:#d2d2d2;">
-                    <v:fill type="frame" />
-                    <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
-                    <![endif]-->
-                     
-                  <table align="left" valign="top" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width: 100%;">
-                    <tr>
-                      <td style=" margin:0; padding:35px 0 0 40px;">
-                        <table align="left" valign="top" border="0" cellspacing="0" cellpadding="0" role="presentation"
-                          style="color:#000000;font-size: 18px; font-family: 'Poppins',sans-serif, Arial, Helvetica; width: 100%;">
-                          <tr>
-                            <td align="left" valign="center" style="padding: 0 40px 25px 0; width: 120px; display: inline-block;">
-                              <img src="https://i.ibb.co/0Xd4hrg/logo.png" alt="Hiking" border="0" width="120" height="35" style="display:block; font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000639; border: none; width: 120px; height: 35px;" />
-                            </td>        
-                            <td style="padding:0 0 25px 0; width: 100%; max-width: 480px;display: inline-block; " align="left" valign="center">
-
-                              <div style="padding: 0 0 0 0; display: inline-block;">  
-                                <a href="#home" style="color: #000000; font-size: 12px; font-weight: 600; font-family:'Montserrat',sans-serif, Arial; line-height: 12px; -webkit-text-size-adjust:none; padding: 0 8px 0 8px;display: inline-block;" target="_blank"> Home </a>
-                              </div>
-                              <div style="padding: 0 0 0 0; display: inline-block;">  
-                                <a href="#about" style="color: #000000; font-size: 12px; font-weight: 600; font-family:'Montserrat',sans-serif, Arial; line-height: 12px; -webkit-text-size-adjust:none; padding: 0 8px 0 8px;display: inline-block;" target="_blank"> About Us </a>
-                              </div>
-                              <div style="padding: 0 0 0 0; display: inline-block;"> 
-                                <a href="#tours" style="color: #000000; font-size: 12px; font-weight: 600; font-family:'Montserrat',sans-serif, Arial; line-height: 12px; -webkit-text-size-adjust:none; padding: 0 8px 0 8px;display: inline-block;" target="_blank"> Tours </a>
-                              </div>
-                              <div style="padding: 0 0 0 0; display: inline-block;"> 
-                                <a href="#store" style="color: #000000; font-size: 12px; font-weight: 600; font-family:'Montserrat',sans-serif, Arial; line-height: 12px; -webkit-text-size-adjust:none; padding: 0 8px 0 8px; display: inline-block;" target="_blank"> Store </a>
-                              </div>
-                              <div style="padding: 0 0 0 0; display: inline-block;"> 
-                                <a href="#footer" style="color: #000000; font-size: 12px; font-weight: 600; font-family:'Montserrat',sans-serif, Arial; line-height: 12px; -webkit-text-size-adjust:none; padding: 0 8px 0 8px; display: inline-block;" target="_blank"> Contacts </a>
-                              </div>
-                            
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr> 
-                  </table>
-                  <!--[if mso]>
-                  </v:textbox>
-                  </v:fill>
-                  </v:rect>
+        <td align="center">
+      
+        <!-- Preheader (remove comment) -->
+        <div style="font-size: 0px;color: #fafdfe;line-height: 1px;mso-line-height-rule:exactly;display: none; max-width: 0px; max-height: 0px; opacity: 0; overflow: hidden; mso-hide:all;">
+          Стартовое описание
+        </div>
+    <!-- End Preheader (remove comment) -->
+    
+        
+          <table align="center" border="0" cellspacing="0" cellpadding="0" role = "presentation" style="width: 100%; max-width: 700px; padding: 0; padding: 0; word-break:normal; box-shadow: 0 0 10px rgba(0, 0, 0, .2); background-color: #d9d9d9;">
+            <tr>
+              <td align="center">
+  
+                  
+         
+                <table align="center" border="0" cellspacing="0" cellpadding="0" role = "presentation"
+                  style="color:#000000;font-family: 'Poppins',sans-serif, Arial, Helvetica;">
+                        
+                  <tr>
+                    <td valign="top" background="https://i.ibb.co/YRfx7rm/bg-min2.png" style="padding:0; Margin:0; background-image: url(https://i.ibb.co/YRfx7rm/bg-min2.png); background-size: cover; background-position: top; background-repeat: repeat; Margin:0; padding:0 0 0 0; width: 100%; height:100%; word-break:normal;position:relative;">
+               
+                  <!--[if gte mso 9]>
+                  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:700px;height:5400px;">
+                    <v:fill type="tile" src="https://i.ibb.co/YRfx7rm/bg-min2.png"/>
+                    <v:textbox inset="0,0,0,0">
                   <![endif]-->
-                </td>
-              </tr>
-            <!-- End Header -->
-            <!-- Mountains are -->
-              <tr id="home">
-                <td align="center"  style="padding:50px 70px 38px 70px; Margin:0 0 0 0; max-width: 100%;  display: inline-block;">
-                  <h2 style="padding:0 0 0 0; Margin: 0 0 0 0;  font-family: sans-serif; font-size: 32px; font-weight: bold; line-height: 36px; text-align: center;">THE MOUNTING ARE   <span style="padding:0 0 0 0; Margin: 0 0 0 0; font-family: sans-serif; font-size: 32px; font-weight: 400; line-height: 36px; text-align: center;">WAITING FOR YOU</span>   </h2> 
-                </td>
-              </tr>
-            <!-- Slider 1 -->
-              <tr>
-                <td align="center" class="mounting-section" style="padding:0 0 0 0; width: 100%; line-height:0px; font-size:0px;">   
-
-                  <article id="slider1">
-
-                      <!--[if mso]><p style="display: none;"><![endif]-->
-                      <input type="radio" checked name="MountinSlider" id="switch1" style="display: none !important; max-height: 0; visibility: hidden;line-height:1px; font-size:0px;">
-                      <span style></span>
-                      <!--[if mso]></p><![endif]-->
-                      <!--[if mso]><p style="display: none;"><![endif]--> 
-                      <input type="radio" name="MountinSlider" id="switch2" style="display: none !important; max-height: 0; visibility: hidden; line-height:1px; font-size:0px;">
-                      <!--[if mso]></p><![endif]-->
-                      <!--[if mso]><p style="display: none;"><![endif]--> 
-                      <input type="radio" name="MountinSlider" id="switch3" style="display: none !important; max-height: 0; visibility: hidden;line-height:1px; font-size:0px;">
-                      <!--[if mso]></p><![endif]-->
-                      <!--[if mso]><p style="display: none;"><![endif]--> 
-                      <input type="radio" name="MountinSlider" id="switch4" style="display: none !important; max-height: 0; visibility: hidden;line-height:1px; font-size:0px;">
-                      <!--[if mso]></p><![endif]-->
-                      <!--[if mso]><p style="display: none;"><![endif]--> 
-                      <input type="radio" name="MountinSlider" id="switch5" style="display: none !important; max-height: 0; visibility: hidden;line-height:1px; font-size:0px;">
-                      <!--[if mso]></p><![endif]-->
-
-                      <table align="left" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:100%;" >
+                      <div>
+                         <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation"  height="100%" style=" color:#000000; font-family: 'Poppins',sans-serif, Arial, Helvetica; Margin:0; padding:0 0 0 0; width: 100%; display:block;">
+                    
+                        
+                      <!-- Header --> 
                         <tr>
-                          <td align="center" style="padding: 0 38px 0 38px;  ">
-                            <div id="sliders1">
-                                <div id="overflow1">
-                                    <div class="image1">
-                                        <article>
-                                          <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style=" padding:0 0 0 0; width: 100%; max-width: 700px; ">
-                                              <tr>
-                                                <td align="center" style="padding: 25px 0 25px 0; ">
-                                                  <div style="padding: :0; margin: 0 auo;">   
-                                                      <a href="https://www.youtube.com/watch?v=99nzuUX1dYI&t=1826s" target="_blank"; style=" -webkit-text-size-adjust:none; padding: 0 0 0 0; text-align: center; display: block;"  > 
-                                                        <img src="https://i.ibb.co/vH9nTGM/video1.png" alt="video1" border="0" width="100%"  style="display:block; font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 700px; width: 100%; " > 
-                                                      </a>
+                          <td  valign="top" height="300" background ="https://i.ibb.co/nzdWZ3V/header-backgraund.png" background-size="contain" style="background-image: url(https://i.ibb.co/nzdWZ3V/header-backgraund.png); background-size:700px 300px; background-repeat: no-repeat; background-position: right; Margin:0; padding:0; width: 100%; max-width:700px; height:300px; min-height:300px; position:relative;
+                          ">
+                            
+                         
+
+                                                
+                            <!--[if gte mso 9]>
+                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:700px; height:300px; background-color:transparent; z-index:1; display: inline-block;">
+                              <v:fill type="frame" src="https://i.ibb.co/92cp2g5/header-outlook.png"/>
+                              <v:textbox inset="0,0,0,0">
+                           <![endif]-->
+                            
+                          
+                        
+                            
+                            <table align="left"  border="0" cellspacing="0" cellpadding="0" role="presentation" style="Margin:0; padding:0 0 0 0; width: 100%; z-index:5; ">
+                              <tr>
+                                <td style=" margin:0; padding:35px 0 0 0; width:40px;"></td>
+                                <td valign="top" style=" margin:0; padding:35px 0 0 0;">
+                                  <table align="left"  border="0" cellspacing="0" cellpadding="0" role="presentation"
+                                    style="color:#000000;font-size: 18px; font-family: 'Poppins',sans-serif, Arial, Helvetica; width: 100%;">
+                                    <tr>
+                                      <td align="left" valign="middle" style="padding: 0 40px 25px 0; width: 120px; display: inline-block;">
+        
+                                        <img src="https://i.ibb.co/0Xd4hrg/logo.png" alt="Hiking" border="0" width="120" height="35" style="display:block; font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000639; border: none; width: 120px; height: 35px;" />
+                                      </td>        
+                                      <td style="padding:0 0 25px 0; width: 100%; max-width: 480px;display: inline-block; " align="left" valign="middle">
+        
+                                        <table align="left" border="0" cellspacing="0" cellpadding="0" role="presentation" >
+                                          <tr>
+                                            <td align="center" style="padding: 0 10px 0 10px; display: inline-block; text-decoration-line: none;">
+                                              <a href="#" style="color: #000000; font-size: 12px; font-weight: 600; font-family:'Montserrat',sans-serif, Arial; line-height: 12px; -webkit-text-size-adjust:none; padding: 0 0 0 0;display: inline-block; text-decoration: none !important; text-underline: none !important;" target="_blank"> Home </a>
+                                            </td>
+                                            <td align="center" style="padding: 0 10px 0 10px; display: inline-block; text-decoration-line: none;">
+                                              <a href="#" style="color: #000000; font-size: 12px; font-weight: 600; font-family:'Montserrat',sans-serif, Arial; line-height: 12px; -webkit-text-size-adjust:none; padding: 0 0 0 0;display: inline-block; text-decoration: none !important; text-underline: none !important;" target="_blank"> 
+                                               About Us </a>
+                                            </td>
+                                            <td align="center" style="padding: 0 10px 0 10px; display: inline-block; text-decoration-line: none;">
+                                              <a href="#" style="color: #000000; font-size: 12px; font-weight: 600; font-family:'Montserrat',sans-serif, Arial; line-height: 12px; -webkit-text-size-adjust:none; padding: 0 0 0 0;display: inline-block; text-decoration: none !important; text-underline: none !important;" target="_blank"> Tours </a>
+                                            </td>
+                                            <td align="center" style="padding: 0 10px 0 10px; display: inline-block; text-decoration-line: none;">
+                                              <a href="#" style="color: #000000; font-size: 12px; font-weight: 600; font-family:'Montserrat',sans-serif, Arial; line-height: 12px; -webkit-text-size-adjust:none; padding: 0 0 0 0; display: inline-block; text-decoration: none !important; text-underline: none !important;" target="_blank"> Store </a>
+                                            </td>
+                                            <td align="center" style="padding: 0 10px 0 10px; display: inline-block; text-decoration-line: none;">
+                                              <a href="#" style="color: #000000; font-size: 12px; font-weight: 600; font-family:'Montserrat',sans-serif, Arial; line-height: 12px; -webkit-text-size-adjust:none; padding: 0 0 0 0; display: inline-block; text-decoration: none !important; text-underline: none !important;" target="_blank"> Contacts </a>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr> 
+                            </table>
+                        
+                          <!--[if gte mso 9]>
+                           </v:textbox>
+                            </v:rect>
+                         <![endif]-->
+                                     
+                          </td>
+                        </tr>
+                      <!-- End Header -->
+                      <!-- Mountains are -->
+                        <tr>
+                          <td align="center"  style="padding:50px 70px 38px 70px; Margin:0 0 0 0; max-width: 100%;  display: inline-block; ">
+                         
+                            <h2 style="padding:0 0 0 0; Margin: 0 0 0 0;  font-family: sans-serif; font-size: 32px; font-weight: bold; line-height: 36px; text-align: center;">THE MOUNTING ARE   <span style="padding:0 0 0 0; Margin: 0 0 0 0; font-family: 'Shadows Into Light'; font-size: 32px; font-weight: 400; line-height: 36px; text-align: center; color: #1e5a7c;"> WAITING FOR YOU </span>   </h2> 
+                          </td>
+                        </tr>
+                      <!-- Slider 1 -->
+                        <tr>
+                          <td align="center" class="mounting-section" style="padding:0 0 0 0; width: 100%; line-height:0px; font-size:0px;">   
+    
+                            <div id="slider1" style="line-height:0px; font-size:0px;">
+        
+                                <!--[if mso]><p style="display: none;"><![endif]-->
+                                <input type="radio" checked name="MountinSlider" id="switch1" style="display: none !important; max-height: 0; visibility: hidden;line-height:1px; font-size:0px;"/>    
+                                <!--[if mso]></p><![endif]-->
+                                <!--[if mso]><p style="display: none;"><![endif]--> 
+                                <input type="radio" name="MountinSlider" id="switch2" style="display: none !important; max-height: 0; visibility: hidden; line-height:1px; font-size:0px;"/>
+                                <!--[if mso]></p><![endif]-->
+                                <!--[if mso]><p style="display: none;"><![endif]--> 
+                                <input type="radio" name="MountinSlider" id="switch3" style="display: none !important; max-height: 0; visibility: hidden;line-height:1px; font-size:0px;"/>
+                                <!--[if mso]></p><![endif]-->
+                                <!--[if mso]><p style="display: none;"><![endif]--> 
+                                <input type="radio" name="MountinSlider" id="switch4" style="display: none !important; max-height: 0; visibility: hidden;line-height:1px; font-size:0px;"/>
+                                <!--[if mso]></p><![endif]-->
+                                <!--[if mso]><p style="display: none;"><![endif]--> 
+                                <input type="radio" name="MountinSlider" id="switch5" style="display: none !important; max-height: 0; visibility: hidden;line-height:1px; font-size:0px;"/>
+                                <!--[if mso]></p><![endif]-->
+        
+                                <table align="left" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:100%;" >
+                                  <tr>
+                                    <td align="center" style=" text-align:center;">
+                                      <div id="sliders1" style="display: inline-block; padding: 0 15px 0 15px;">
+                                          <div id="overflow1">
+                                              <div class="image1">
+                                                  <div>
+                                                    <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style=" padding:0 0 0 0; width: 100%; max-width: 400px;">
+                                                        <tr>
+                                                          <td align="center" style="padding: 25px 0 25px 0; text-align:center; ">
+                                                            <div style="padding: :0; Margin: 0; display:inline-block;"> 
+                                                     
+                                                                <a href="https://www.youtube.com/watch?v=99nzuUX1dYI&t=1826s" target="_blank" style=" -webkit-text-size-adjust:none; padding: 0 0 0 0; text-align: center; display: block;"  > 
+                                                              <!--[if !gte mso 9]> -->
+                                                                  <img src="https://i.ibb.co/vH9nTGM/video1.png" alt="video1" border="0" width="100%"  style="display:block; font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 400px; width: 100%;"/>  
+                                                               <!--   <![endif]-->   
+                                                               <!--[if gte mso 9]>
+                                                                  <img src="https://i.ibb.co/vH9nTGM/video1.png" alt="video1" border="0" width="400"  style="display:block; font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 400px;"/>  
+                                                               <![endif]-->       
+                                                                </a>
+                                                            </div>
+                                                          </td>
+                                                        </tr>
+                                                    </table>                       
                                                   </div>
+                                                  <div>
+                                                    <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style=" padding:0 0 0 0; width: 100%; max-width: 400px; ">
+                                                      <tr>
+                                                        <td align="center" style="padding: 25px 0 25px 0; ">
+                                                          <div style="padding: :0; margin: 0 auo;">   
+                                                              <a href="https://www.youtube.com/watch?v=99nzuUX1dYI&t=1826s" target="_blank" style=" -webkit-text-size-adjust:none; padding: 0 0 0 0; text-align: center; display: block;"  > 
+                                                              <!--[if !gte mso 9]> -->
+                                                                  <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="video1" border="0" width="100%"  style="display:block; font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 400px; width: 100%;"/>  
+                                                               <!--   <![endif]-->   
+                                                               <!--[if gte mso 9]> 
+                                                                  <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="video1" border="0" width="400"  style="display:block; font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 400px;"/>  
+                                                                <![endif]--> 
+                                                              </a>
+                                                          </div>
+                                                        </td>
+                                                      </tr>
+                                                    </table>                       
+                                                  </div>
+                                                  <div>
+                                                    <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style=" padding:0 0 0 0; width: 100%; max-width: 400px; ">
+                                                      <tr>
+                                                        <td align="center" style="padding: 25px 0 25px 0; ">
+                                                          <div style="padding: :0; margin: 0 auo;">   
+                                                              <a href="https://www.youtube.com/watch?v=99nzuUX1dYI&t=1826s" target="_blank" style=" -webkit-text-size-adjust:none; padding: 0 0 0 0; text-align: center; display: block;"  > 
+                                                              <!--[if !gte mso 9]> -->
+                                                                  <img src="https://i.ibb.co/vH9nTGM/video1.png" alt="video1" border="0" width="100%"  style="display:block; font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 400px; width: 100%;"/>  
+                                                               <!--   <![endif]-->   
+                                                               <!--[if gte mso 9]>
+                                                                  <img src="https://i.ibb.co/vH9nTGM/video1.png" alt="video1" border="0" width="400"  style="display:block; font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 400px;"/>  
+                                                                <![endif]--> 
+                                                              </a>
+                                                          </div>
+                                                        </td>
+                                                      </tr>
+                                                    </table>                       
+                                                  </div>
+                                                  <div>
+                                                    <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style=" padding:0 0 0 0; width: 100%; max-width: 400px; ">
+                                                      <tr>
+                                                        <td align="center" style="padding: 25px 0 25px 0; ">
+                                                          <div style="padding: :0; margin: 0 auo;">   
+                                                              <a href="https://www.youtube.com/watch?v=99nzuUX1dYI&t=1826s" target="_blank" style=" -webkit-text-size-adjust:none; padding: 0 0 0 0; text-align: center; display: block;"  > 
+                                                              <!--[if !gte mso 9]> -->
+                                                                  <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="video1" border="0" width="100%"  style="display:block; font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 400px; width: 100%;"/>  
+                                                               <!--   <![endif]-->   
+                                                               <!--[if gte mso 9]> 
+                                                                  <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="video1" border="0" width="400"  style="display:block; font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 400px;"/>  
+                                                                <![endif]--> 
+                                                                
+                                                              </a>
+                                                          </div>
+                                                        </td>
+                                                      </tr>
+                                                    </table>                       
+                                                  </div>
+                                                  <div>
+                                                    <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style=" padding:0 0 0 0; width: 100%; max-width: 400px; ">
+                                                      <tr>
+                                                        <td align="center" style="padding: 25px 0 25px 0; ">
+                                                          <div style="padding: :0; margin: 0 auo;">   
+                                                              <a href="https://www.youtube.com/watch?v=99nzuUX1dYI&t=1826s" target="_blank" style=" -webkit-text-size-adjust:none; padding: 0 0 0 0; text-align: center; display: block;"  > 
+                                                                 <!--[if !gte mso 9]> -->
+                                                                  <img src="https://i.ibb.co/vH9nTGM/video1.png" alt="video1" border="0" width="100%"  style="display:block; font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 400px; width: 100%;"/>  
+                                                               <!--   <![endif]-->   
+                                                               <!--[if gte mso 9]>
+                                                                  <img src="https://i.ibb.co/vH9nTGM/video1.png" alt="video1" border="0" width="400"  style="display:block; font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 400px;"/>  
+                                                                <![endif]--> 
+                                                              </a>
+                                                          </div>
+                                                        </td>
+                                                      </tr>
+                                                    </table>                       
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table> 
+                                <!--[if !mso]><!-- -->
+                                <table align="right" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:100%; " >
+                                    <td align="center" style="padding: 0 38px 0 38px;  line-height:12px; font-size:10px;  ">
+                                      <div id="active1" >
+                                        <p style="color:#4e171b;font-size: 12px; line-height:12px; font-family: 'Poppins',sans-serif, Arial, Helvetica; font-weight:light; Margin:0;padding: 25px 0 25px 0; width:100%; text-align: center;" > Mountin Survival tutorial </p>
+                                        <div >
+                                           <label for="switch1"></label>  
+                                           <label for="switch2"></label>
+                                           <label for="switch3"></label>
+                                           <label for="switch4"></label>
+                                           <label for="switch5"></label>
+                                        </div>     
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table> 
+                                <!--<![endif]-->
+                            </div> 
+          
+                            
+                          </td> 
+                        </tr>
+                        <tr>
+                          <td  class="mounting-section__description" style="padding: 25px 35px 75px 35px; Margin: 0 0 0 0; ">
+                            <p style="color:#000000;font-size: 12px; line-height:14px; font-family: 'Poppins',sans-serif, Arial, Helvetica; font-weight:light; Margin:0;padding:0; text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                          </td>
+                        </tr>
+        
+                    <!-- End Mountains are -->
+                    <!-- About us --> 
+                         <tr>
+                          <td align="center" style="padding:60px 0 80px 0; Margin: 0 0 0 0; background-color: #ffffff;">
+                             <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width: 80%; min-height: 205px;" >
+                              <tr>
+                                <td  valign="top" background="https://i.ibb.co/X3tyDjG/quote.png" style="padding:0 0 0 25px; Margin: 0 0 0 0; width:10%; height: 100%;  background-image: url(https://i.ibb.co/X3tyDjG/quote.png);  background-repeat: no-repeat; background-size: contain; background-position: top; display: table-cell; vertical-align:top;">
+                                <!--[if gte mso 9]>
+                                  <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: table-cell; width: 38pt; height:38pt; background-size: contain; background-repeat: no-repeat; background-position: top;vertical-align: top;" src="https://i.ibb.co/X3tyDjG/quote.png" />
+                                  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: table-cell; vertical-align: top; 
+                                    position: absolute; width: 38pt; height:100%; top:0">
+                                    <v:fill  opacity="0%" color="#000000"  />
+                                    <v:textbox inset="0,0,0,0">
+                                  
+                                    </v:textbox>       
+                                    </v:rect>
+                                <![endif]-->
+                                </td>
+                                <td style="padding:0 15px 0 15px; Margin: 0 0 0 0; width:62%; display: table-cell; ">
+                                  <h3 style=" text-align: center; margin: 0; font-weight: 700; font-size: 32px; line-height: 32px; letter-spacing: -0.01em; color: #000000;"> ABOUT US </h3>
+                                    <p align="center" style="color:#000000;font-size: 12px; line-height:14px; font-family: 'Poppins',sans-serif, Arial, Helvetica; font-weight:light; Margin:0;padding:40px 0 0 0; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                                </td>
+                                <td valign="bottom" background ="https://i.ibb.co/X3tyDjG/quote.png" style="padding:0 0 0 25px; Margin: 0 0 0 0; width:10%; height: 100%;  background-image: url(https://i.ibb.co/X3tyDjG/quote.png);  background-repeat: no-repeat; background-size: contain; background-position: bottom; display: table-cell; vertical-align:bottom;">
+                                  <!--[if gte mso 9]>
+                                  <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: table-cell; width: 38pt; height:38pt; background-size: contain; background-repeat: no-repeat; background-position: bottom; vertical-align:bottom;" src="https://i.ibb.co/X3tyDjG/quote.png" />
+                                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: table-cell; 
+                                    position: absolute; width: 38pt; height:100%; bottom:0;">
+                                    <v:fill  opacity="0%" color="#000000"  />
+                                    <v:textbox inset="0,0,0,0">
+                                  
+                                    </v:textbox>       
+                                    </v:rect>
+                                  <![endif]-->
+                                </td>
+                              </tr>
+                            </table>             
+                          </td>
+                        </tr>
+                    <!-- End About us -->
+                    <!-- Chouse you tour --> 
+                        <tr>
+                          <td align="center" style="padding:95px 25px 22px 25px; Margin: 0 0 0 0;">
+        
+                            <h2 style="margin: 0; font-weight: 700; font-size: 32px; line-height: 32px; letter-spacing: -0.01em; color: #000000; display: inline-block;"> CHOOSE  <span style="padding:0 0 0 0;  Margin: 0 0 0 0; font-family: 'Shadows Into Light'; font-size: 32px; font-weight: 400; line-height: 36px; letter-spacing: -0.01em; color: #1e5a7c;"> YOUR TOUR </span>
+                            </h2>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" style="padding:6px 25px 42px 25px; Margin: 0 0 0 0;">
+                             <p align="center" style="color:#000000;font-size: 12px; line-height:14px; font-family: 'Poppins',sans-serif, Arial, Helvetica; font-weight:light; Margin:0 0 0 0; padding:0 0 0 0; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>            
+                          </td>
+                        </tr>
+        
+                    <!-- Gallery1 -->
+                        <tr>  
+                          <td style="padding:10px 0 20px 0; Margin: 0 0 0 0; text-align:center;">
+                            
+                            <div style="padding:0 25px 0 25px; display:inline-block;">
+                              <!--[if (gte mso 9)|(IE)]>
+                                  <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding:0 0 0 0; Margin: 0 0 0 0; width:100%;">
+                                  <tr>
+                                  <td align="center" style="Margin:0 0 0 0; padding: 0 0 0 0;"> 
+                              <![endif]-->
+                              <table class="two-columns" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding:0 0 0 0; Margin: 0 0 0 0; ">
+                                <tr>
+                                  <td style="Margin:0 0 0 0; padding: 0 0 0 0; text-align:center;"> 
+                                      <!--[if (gte mso 9)|(IE)]>
+                                          <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding:0 0 0 0; Margin: 0 0 0 0; width:650px;">
+                                            <tr>
+                                            <td align="center" style="Margin:0 0 0 0; padding: 20px 0 20px 0; width:50%; text-align:center;"> 
+                                      <![endif]-->
+                                      
+                                       <div style="display:inline-block; width:100%; max-width: 250px; padding:20px 35px 20px 35px;">
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding:0 0 0 0; Margin: 0 0 0 0; width:250px;">
+                                                <tr>
+                                                <td align="center" style="Margin:0 0 0 0; padding: 0 0 0 0;"> 
+                                            <![endif]-->
+                                            <table class="column" border="0" cellspacing="0" cellpadding="0" role="presentation" style="background-color: #ffffff;">
+                                              <tr>
+                                                <td style="padding:5px 5px 5px 5px; Margin: 0 0 0 0;">
+                                                  <img src="https://i.ibb.co/JsjDz0k/img1.png" alt="Nice img1" border="0" width="235" height="auto" style="display:block; font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 235px; width: 100%;"/>
+                                                </td>
+                                              </tr>                           
+                                              <tr>
+                                                <td style="padding:26px 0 0 0; Margin: 0 0 0 0;">
+                                                  <h3 style="margin: 0; padding: 0 0 0 0; font-weight: 700; font-size: 12px; line-height: 16px; color: #000000; text-align: center;"> Lacke in the mountins </h3>
                                                 </td>
                                               </tr>
-                                          </table>                       
-                                        </article>
-                                        <article>
-                                          <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style=" padding:0 0 0 0; width: 100%; max-width: 700px; ">
-                                            <tr>
-                                              <td align="center" style="padding: 25px 0 25px 0; ">
-                                                <div style="padding: :0; margin: 0 auo;">   
-                                                    <a href="https://www.youtube.com/watch?v=99nzuUX1dYI&t=1826s" target="_blank"; style=" -webkit-text-size-adjust:none; padding: 0 0 0 0; text-align: center; display: block;"  > 
-                                                      <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="video1" border="0" width="100%"  style="display:block; font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 700px; width: 100%; " > 
-                                                    </a>
-                                                </div>
-                                              </td>
-                                            </tr>
-                                          </table>                       
-                                        </article>
-                                        <article>
-                                          <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style=" padding:0 0 0 0; width: 100%; max-width: 700px; ">
-                                            <tr>
-                                              <td align="center" style="padding: 25px 0 25px 0; ">
-                                                <div style="padding: :0; margin: 0 auo;">   
-                                                    <a href="https://www.youtube.com/watch?v=99nzuUX1dYI&t=1826s" target="_blank"; style=" -webkit-text-size-adjust:none; padding: 0 0 0 0; text-align: center; display: block;"  > 
-                                                      <img src="https://i.ibb.co/vH9nTGM/video1.png" alt="video1" border="0" width="100%"  style="display:block; font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 700px; width: 100%; " > 
-                                                    </a>
-                                                </div>
-                                              </td>
-                                            </tr>
-                                          </table>                       
-                                        </article>
-                                        <article>
-                                          <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style=" padding:0 0 0 0; width: 100%; max-width: 700px; ">
-                                            <tr>
-                                              <td align="center" style="padding: 25px 0 25px 0; ">
-                                                <div style="padding: :0; margin: 0 auo;">   
-                                                    <a href="https://www.youtube.com/watch?v=99nzuUX1dYI&t=1826s" target="_blank"; style=" -webkit-text-size-adjust:none; padding: 0 0 0 0; text-align: center; display: block;"  > 
-                                                      <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="video1" border="0" width="100%"  style="display:block; font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 700px; width: 100%; " > 
-                                                    </a>
-                                                </div>
-                                              </td>
-                                            </tr>
-                                          </table>                       
-                                        </article>
-                                        <article>
-                                          <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style=" padding:0 0 0 0; width: 100%; max-width: 700px; ">
-                                            <tr>
-                                              <td align="center" style="padding: 25px 0 25px 0; ">
-                                                <div style="padding: :0; margin: 0 auo;">   
-                                                    <a href="https://www.youtube.com/watch?v=99nzuUX1dYI&t=1826s" target="_blank"; style=" -webkit-text-size-adjust:none; padding: 0 0 0 0; text-align: center; display: block;"  > 
-                                                      <img src="https://i.ibb.co/vH9nTGM/video1.png" alt="video1" border="0" width="100%"  style="display:block; font-size: 18px; line-height: 21px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 700px; width: 100%; " > 
-                                                    </a>
-                                                </div>
-                                              </td>
-                                            </tr>
-                                          </table>                       
-                                        </article>
-                                      
-                                    </div>
-                                </div>
-                            </div>
-                          </td>
-                        </tr>
-                      </table> 
-
-                      <table align="right" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:100%; " >
-                          <td align="center" style="padding: 0 38px 0 38px;  line-height:12px; font-size:10px;  ">
-                            <div id="active1" >
-                              <p style="color:#4e171b;font-size: 12px; line-height:12px; font-family: 'Poppins',sans-serif, Arial, Helvetica; font-weight:light; Margin:0;padding: 25px 0 25px 0; width:100%; text-align: center;" > Mountin Survival tutorial </p>
-                              <div >
-                                 <label for="switch1"></label>  
-                                 <label for="switch2"></label>
-                                 <label for="switch3"></label>
-                                 <label for="switch4"></label>
-                                 <label for="switch5"></label>
-                              </div>     
-                            </div>
-                          </td>
-                        </tr>
-                      </table> 
-
-                  </article> 
-
-                </td> 
-              </tr>
-
-              <tr>
-                <td  class="mounting-section__description" style="padding: 25px 35px 75px 35px; Margin: 0 0 0 0; ">
-                  <p style="color:#000000;font-size: 12px; line-height:14px; font-family: 'Poppins',sans-serif, Arial, Helvetica; font-weight:light; Margin:0;padding:0; text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                </td>
-              </tr>
-
-          <!-- End Mountains are -->
-          <!-- About us --> 
-              <tr id="about">
-                <td align="center" style="padding:60px 90px 60px 90px; Margin: 0 0 0 0; background-color: #ffffff;">
-                  <h3 style="margin: 0; font-weight: 700; font-size: 24px; line-height: 24px; letter-spacing: -0.01em; color: #000000;"> ABOUT US </h3>
-                   <p align="center" style="color:#000000;font-size: 12px; line-height:14px; font-family: 'Poppins',sans-serif, Arial, Helvetica; font-weight:light; Margin:0;padding:40px 0 45px 0; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>            
-                </td>
-              </tr>
-          <!-- End About us -->
-          <!-- Chouse you tour --> 
-              <tr id="tours">
-                <td align="center" style="padding:95px 25px 22px 25px; Margin: 0 0 0 0;">
-
-                  <h2 style="margin: 0; font-weight: 700; font-size: 32px; line-height: 32px; letter-spacing: -0.01em; color: #000000; display: inline-block;"> CHOOSE  <span style="padding:0 0 0 0;  Margin: 0 0 0 0; color: #1e5a7c; font-weight: 300; font-size: 32px; line-height: 32px; letter-spacing: -0.01em; "> <i> YOUR TOUR </i></span>
-                  </h2>
-                </td>
-              </tr>
-              <tr>
-                <td align="center" style="padding:6px 25px 42px 25px; Margin: 0 0 0 0;">
-                   <p align="center" style="color:#000000;font-size: 12px; line-height:14px; font-family: 'Poppins',sans-serif, Arial, Helvetica; font-weight:light; Margin:0 0 0 0; padding:0 0 0 0; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>            
-                </td>
-              </tr>
-
-          <!-- Gallery1 -->
-              <tr id="store" >  
-                <td style="padding:10px 25px 20px 25px; Margin: 0 0 0 0;">
-                  <table class="two-columns" align="center" valign="center"  border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding:0 0 0 0; Margin: 0 0 0 0; width: 100%; text-align: center;" >
-                    <tr>
-                     <td style="Margin:0 0 0 0; padding: 0 0 0 0;"> 
-                        <table class="column"  valign="center"  border="0" cellspacing="0" cellpadding="0" role="presentation" style=" width:100%; max-width: 300px; Margin:0 0 0 0; padding: 0 0 0 0; display: inline-block; ">
-                          <tr>
-                            <td style="padding:20px 35px 20px 35px; Margin: 0 0 0 0;">
-                              <table class="column"  valign="center"  border="0" cellspacing="0" cellpadding="0" role="presentation" style="background-color: #ffffff;">
-                                <tr>
-                                  <td style="padding:5px 5px 5px 5px; Margin: 0 0 0 0;">
-                                    <img src="https://i.ibb.co/JsjDz0k/img1.png" alt="Nice img1" border="0" width="235" height="auto" style="display:block; font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 235px; width: 100%;">
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="padding:26px 0 0 0; Margin: 0 0 0 0;">
-                                    <h3 style="margin: 0; padding: 0 0 0 0; font-weight: 700; font-size: 12px; line-height: 16px; color: #000000; text-align: center;"> Lacke in the mountins </h3>
-
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="padding:27px 10px 38px 10px; Margin: 0 0 0 0;">
-                                    <p align="center" style="color:#000000;font-size: 12px; line-height:14px; font-family: 'Poppins',sans-serif, Arial, Helvetica; font-weight:light; Margin:0 0 0 0; padding:0 0 0 0; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>                          
-
-                                  </td>
-                                </tr>           
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                        <table class="column" valign="center"  border="0" cellspacing="0" cellpadding="0" role="presentation" style=" width:100%; max-width: 300px; Margin:0 0 0 0; padding: 0 0 0 0; display: inline-block; ">
-                          <tr>
-                            <td style="padding:20px 35px 20px 35px; Margin: 0 0 0 0;">
-                              <table class="column"  valign="center"  border="0" cellspacing="0" cellpadding="0" role="presentation" style="background-color: #ffffff;">
-                                <tr>
-                                  <td style="padding:5px 5px 5px 5px; Margin: 0 0 0 0;">
-                                    <img src="https://i.ibb.co/kQbMvf1/img2.png" alt="Nice img1" border="0" width="235" height="auto" style="display:block; font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 235px; width: 100%;">
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="padding:26px 0 0 0; Margin: 0 0 0 0;">
-                                    <h3 style="margin: 0; padding: 0 0 0 0; font-weight: 700; font-size: 12px; line-height: 16px; color: #000000; text-align: center;"> Lacke in the winter </h3>
-
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="padding:27px 10px 38px 10px; Margin: 0 0 0 0;">
-                                    <p align="center" style="color:#000000;font-size: 12px; line-height:14px; font-family: 'Poppins',sans-serif, Arial, Helvetica; font-weight:light; Margin:0 0 0 0; padding:0 0 0 0; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>                          
-
-                                  </td>
-                                </tr>           
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                      </td> 
-                    </tr>
-
-                    <tr>
-                      <td style="Margin:0 0 0 0; padding: 0 0 0 0;"> 
-                        <table class="column"  valign="center"  border="0" cellspacing="0" cellpadding="0" role="presentation" style=" width:100%; max-width: 300px; Margin:0 0 0 0; padding: 0 0 0 0; display: inline-block; ">
-                          <tr>
-                            <td style="padding:20px 35px 20px 35px; Margin: 0 0 0 0;">
-                              <table class="column"  valign="center"  border="0" cellspacing="0" cellpadding="0" role="presentation" style="background-color: #ffffff;">
-                                <tr>
-                                  <td style="padding:5px 5px 5px 5px; Margin: 0 0 0 0;">
-                                    <img src="https://i.ibb.co/sPBdLvr/img3.png" alt="Nice img1" border="0" width="235" height="auto" style="display:block; font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 235px; width: 100%;">
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="padding:26px 0 0 0; Margin: 0 0 0 0;">
-                                    <h3 style="margin: 0; padding: 0 0 0 0; font-weight: 700; font-size: 12px; line-height: 16px; color: #000000; text-align: center;"> Lacke in the forest </h3>
-
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="padding:27px 10px 38px 10px; Margin: 0 0 0 0;">
-                                    <p align="center" style="color:#000000;font-size: 12px; line-height:14px; font-family: 'Poppins',sans-serif, Arial, Helvetica; font-weight:light; Margin:0 0 0 0; padding:0 0 0 0; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>                          
-
-                                  </td>
-                                </tr>           
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                         <table class="column"  valign="center"  border="0" cellspacing="0" cellpadding="0" role="presentation" style=" width:100%; max-width: 300px; Margin:0 0 0 0; padding: 0 0 0 0; display: inline-block; ">
-                          <tr>
-                            <td style="padding:20px 35px 20px 35px; Margin: 0 0 0 0;">
-                              <table class="column"  valign="center"  border="0" cellspacing="0" cellpadding="0" role="presentation" style="background-color: #ffffff;">
-                                <tr>
-                                  <td style="padding:5px 5px 5px 5px; Margin: 0 0 0 0;">
-                                    <img src="https://i.ibb.co/KK00ybq/img4.png" alt="Nice img1" border="0" width="235" height="auto" style="display:block; font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 235px; width: 100%;">
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="padding:26px 0 0 0; Margin: 0 0 0 0;">
-                                    <h3 style="margin: 0; padding: 0 0 0 0; font-weight: 700; font-size: 12px; line-height: 16px; color: #000000; text-align: center;"> Lacke in the mountins </h3>
-
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="padding:27px 10px 38px 10px; Margin: 0 0 0 0;">
-                                    <p align="center" style="color:#000000;font-size: 12px; line-height:14px; font-family: 'Poppins',sans-serif, Arial, Helvetica; font-weight:light; Margin:0 0 0 0; padding:0 0 0 0; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>                          
-
-                                  </td>
-                                </tr>           
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                      </td> 
-
-                    </tr>
-                  </table>
-                </td>
-
-              </tr>
-          <!-- End Gallery1 -->
-
-          <!-- Gallery2 --> 
-              <tr>  
-                <td style="padding:0 0 0 0; Margin: 0 0 0 0;">
-                  <table  align="center" valign="center"  border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding:0 0 0 0; Margin: 0 0 0 0; border-collapse: collapse; border-collapse: separate; border-spacing: 0; width: 100%;text-align: center;" >
-                    <tr>
-                     <td style="Margin:0 0 0 0; padding: 0 0 113px 0;" vertical-align="top" style="vertical-align: center !important;"> 
-               
-             <!-- Slide2 -->                 
-                           
-
-                              <!-- input-->
-                              <!--[if mso]><p style="display: none;"><![endif]-->
-                              <input type="radio" checked name="StoreSlider" id="switch21" style="display: none !important; max-height: 0; visibility: hidden;line-height:1px; font-size:0px;">
-                              <span style></span>
-                              <!--[if mso]></p><![endif]-->
-                              <!--[if mso]><p style="display: none;"><![endif]--> 
-                              <input type="radio" name="StoreSlider" id="switch22" style="display: none !important; max-height: 0; visibility: hidden; line-height:1px; font-size:0px;">
-                              <!--[if mso]></p><![endif]-->
-                              <!--[if mso]><p style="display: none;"><![endif]--> 
-                              <input type="radio" name="StoreSlider" id="switch23" style="display: none !important; max-height: 0; visibility: hidden;line-height:1px; font-size:0px;">
-                              <!--[if mso]></p><![endif]-->
-                              <!--[if mso]><p style="display: none;"><![endif]--> 
-                              <input type="radio" name="StoreSlider" id="switch24" style="display: none !important; max-height: 0; visibility: hidden;line-height:1px; font-size:0px;">
-                              <!--[if mso]></p><![endif]-->
-                              <!--[if mso]><p style="display: none;"><![endif]--> 
-                              <input type="radio" name="StoreSlider" id="switch25" style="display: none !important; max-height: 0; visibility: hidden;line-height:1px; font-size:0px;">
-                              <!--[if mso]></p><![endif]-->
-                              
-<!--
-                              <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style=" padding:0 0 0 0; Margin: 0; width: 100%; ">
-                                <tr>
-
-                                  
-                                  <td style="padding:0 0 0 0; Margin: 0 0 0 0; background-color: #ffffff; width:11.2%; font-size: 12px;">
-
-                                    <div id="active2" >  
-                                        <label for="switch21"></label>
-                                        <label for="switch22"></label>
-                                        <label for="switch23"></label>
-                                        <label for="switch24"></label>
-                                        <label for="switch25"></label>      
-                                    </div>
-
-                                  </td>
-
-                                  <td class="mobile1-hidden" style="padding:0 0 0 0; Margin: 0 0 0 0;"> 
-                                    <table  valign="center"  align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style=" width: 100%; max-width: 100px;">
-                                      <tr>
-                                        <td style="padding:0 0 0 0; Margin: 0 0 0 0;">
-                                          <div style="padding: :0; margin: 0 auo;"> 
-                                            <img src="https://i.ibb.co/Wc1ncGT/store.png" alt="STORE" border="0" width="100%" height="auto" style="display:block; font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 180px; width: 100%; min-width: 50px;">
-                                          </div>
-                                        </td>
-                                      </tr>    
-                                    </table>
-                                  </td> 
+                                              <tr>
+                                                <td style="padding:27px 10px 38px 10px; Margin: 0 0 0 0;">
+                                                  <p align="center" style="color:#000000;font-size: 12px; line-height:14px; font-family: 'Poppins',sans-serif, Arial, Helvetica; font-weight:light; Margin:0 0 0 0; padding:0 0 0 0; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>   
+                                                </td>
+                                              </tr>         
+                                            </table> 
+                                             <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                             <![endif]-->
+                                       </div>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                          </td>
+                                          <td align="center" style="Margin:0 0 0 0; padding: 20px 0 20px 0; width:50%; text-align:center;"> 
+                                        <![endif]-->
+                                       <div style="display:inline-block; width:100%; max-width: 250px; padding:20px 35px 20px 35px;">
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding:0 0 0 0; Margin: 0 0 0 0; width:250px;">
+                                                <tr>
+                                                <td align="center" style="Margin:0 0 0 0; padding: 0 0 0 0;"> 
+                                            <![endif]-->
+                                        
+                                              <table class="column" border="0" cellspacing="0" cellpadding="0" role="presentation" style="background-color: #ffffff;">
+                                                <tr>
+                                                  <td style="padding:5px 5px 5px 5px; Margin: 0 0 0 0;">
+                                                    <img src="https://i.ibb.co/kQbMvf1/img2.png" alt="Nice img1" border="0" width="235" height="auto" style="display:block; font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 235px; width: 100%;"/>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="padding:26px 0 0 0; Margin: 0 0 0 0;">
+                                                    <h3 style="margin: 0; padding: 0 0 0 0; font-weight: 700; font-size: 12px; line-height: 16px; color: #000000; text-align: center;"> Lacke in the winter </h3>
+              
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="padding:27px 10px 38px 10px; Margin: 0 0 0 0;">
+                                                    <p align="center" style="color:#000000;font-size: 12px; line-height:14px; font-family: 'Poppins',sans-serif, Arial, Helvetica; font-weight:light; Margin:0 0 0 0; padding:0 0 0 0; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>                          
+                                                  </td>
+                                                </tr>           
+                                              </table>
+                                            
+                                        
+                                             <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                             <![endif]-->
+                                        
+                                      </div>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                          </td>
+                                          </tr>
+                                          </table>
+                                        <![endif]-->
                                 
-
-
-
-                                  <td align="center" style="padding: 0; display: block; ">-->
-                                    
-                                     <div id="active2" class="slider2-controls">  
+                              
+                                  </td> 
+                            </tr>
+                                <tr>
+                                  <td style="Margin:0 0 0 0; padding: 0 0 0 0; text-align:center;"> 
+                                      <!--[if (gte mso 9)|(IE)]>
+                                          <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding:0 0 0 0; Margin: 0 0 0 0; width:650px; ">
+                                            <tr>
+                                            <td align="center" style="Margin:0 0 0 0; padding: 20px 0 20px 0; width:50%; text-align:center;"> 
+                                      <![endif]-->
                                       
+                                       <div style="display:inline-block; width:100%; max-width: 250px; padding:20px 35px 20px 35px;">
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding:0 0 0 0; Margin: 0 0 0 0; width:250px;">
+                                                <tr>
+                                                <td align="center" style="Margin:0 0 0 0; padding: 0 0 0 0;"> 
+                                            <![endif]-->
+                                            <table class="column" border="0" cellspacing="0" cellpadding="0" role="presentation" style="background-color: #ffffff;">
+                                              <tr>
+                                                <td style="padding:5px 5px 5px 5px; Margin: 0 0 0 0;">
+                                                  <img src="https://i.ibb.co/sPBdLvr/img3.png" alt="Nice img1" border="0" width="235" height="auto" style="display:block; font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 235px; width: 100%;"/>
+                                                </td>
+                                              </tr>                           
+                                              <tr>
+                                                <td style="padding:26px 0 0 0; Margin: 0 0 0 0;">
+                                                  <h3 style="margin: 0; padding: 0 0 0 0; font-weight: 700; font-size: 12px; line-height: 16px; color: #000000; text-align: center;"> Lacke in the mountins </h3>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td style="padding:27px 10px 38px 10px; Margin: 0 0 0 0;">
+                                                  <p align="center" style="color:#000000;font-size: 12px; line-height:14px; font-family: 'Poppins',sans-serif, Arial, Helvetica; font-weight:light; Margin:0 0 0 0; padding:0 0 0 0; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>   
+                                                </td>
+                                              </tr>         
+                                            </table> 
+                                             <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                             <![endif]-->
+                                       </div>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                          </td>
+                                          <td align="center" style="Margin:0 0 0 0; padding: 20px 0 20px 0; width:50%; text-align:center;"> 
+                                        <![endif]-->
+                                       <div style="display:inline-block; width:100%; max-width: 250px; padding:20px 35px 20px 35px;">
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding:0 0 0 0; Margin: 0 0 0 0; width:250px;">
+                                                <tr>
+                                                <td align="center" style="Margin:0 0 0 0; padding: 0 0 0 0;"> 
+                                            <![endif]-->
+                                        
+                                              <table class="column" border="0" cellspacing="0" cellpadding="0" role="presentation" style="background-color: #ffffff;">
+                                                <tr>
+                                                  <td style="padding:5px 5px 5px 5px; Margin: 0 0 0 0;">
+                                                    <img src="https://i.ibb.co/KK00ybq/img4.png" alt="Nice img1" border="0" width="235" height="auto" style="display:block; font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 235px; width: 100%;"/>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="padding:26px 0 0 0; Margin: 0 0 0 0;">
+                                                    <h3 style="margin: 0; padding: 0 0 0 0; font-weight: 700; font-size: 12px; line-height: 16px; color: #000000; text-align: center;"> Lacke in the winter </h3>
+              
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td style="padding:27px 10px 38px 10px; Margin: 0 0 0 0;">
+                                                    <p align="center" style="color:#000000;font-size: 12px; line-height:14px; font-family: 'Poppins',sans-serif, Arial, Helvetica; font-weight:light; Margin:0 0 0 0; padding:0 0 0 0; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>                          
+                                                  </td>
+                                                </tr>           
+                                              </table>
+                                            
+                                        
+                                             <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                             <![endif]-->
+                                        
+                                      </div>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                          </td>
+                                          </tr>
+                                          </table>
+                                        <![endif]-->
+                                
+                              
+                                  </td> 
+                                  </tr>
+                                </table>
+                              <!--[if (gte mso 9)|(IE)]>
+                                      </td>
+                                      </tr>
+                                      </table>
+                              <![endif]-->
+                                  
+                            </div>
+                          </td>
+                          
+        
+                        </tr>
+                    <!-- End Gallery1 -->
+        
+                    <!-- Gallery2 --> 
+        
+                     <!-- Slide2 -->  
+                        <tr>  
+                          <td style="padding:0 0 0 0; Margin: 0 0 0 0;">
+                            <table  align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="padding:0 0 0 0; Margin: 0 0 0 0; border-collapse: collapse; border-collapse: separate; border-spacing: 0; width: 100%;text-align: center;" >
+                              <tr>
+                               <td style="Margin:0 0 0 0; padding: 0 0 113px 0; line-height:0px; font-size:0px;" valign="center"> 
+               
+                                  <div id="slider2" style="line-height:0px; font-size:0px;">
+                                      <!--[if mso]><p style="display: none;"><![endif]-->
+                                      <input type="radio" checked name="StoreSlider" id="switch21" style="display: none !important; max-height: 0; visibility: hidden;line-height:1px; font-size:0px;"/>
+                                      <!--[if mso]></p><![endif]-->
+                                      <!--[if mso]><p style="display: none;"><![endif]--> 
+                                      <input type="radio" name="StoreSlider" id="switch22" style="display: none !important; max-height: 0; visibility: hidden;line-height:1px; font-size:0px;"/>
+                                      <!--[if mso]></p><![endif]-->
+                                      <!--[if mso]><p style="display: none;"><![endif]--> 
+                                      <input type="radio" name="StoreSlider" id="switch23" style="display: none !important; max-height: 0; visibility: hidden;line-height:1px; font-size:0px;"/>
+                                      <!--[if mso]></p><![endif]-->
+                                     
+                                      <!--[if !mso]><!-- --> 
+                                      <div id="active2" class="slider2-controls">  
                                         <label for="switch21"></label>
                                         <label for="switch22"></label>
-                                        <label for="switch23"></label>
-                                        <label for="switch24"></label>
-                                        <label for="switch25"></label>      
+                                        <label for="switch23"></label>                 
+                                      </div>
                                       
-                                    </div>
-                                  
-                                    <div class="slidr2-store"> 
-                      <!--                 <img src="https://i.ibb.co/Wc1ncGT/store.png" alt="STORE" border="0" width="100%" height="auto" style="display:block; font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width: 180px; width: 100%; min-width: 50px;">  -->
-                                    </div>
+                                      
+                                       <div  style="width:24.8%; 
+                                        display: table-cell;
+                                        padding: 0 0 0 0; 
+                                        Margin: 0 0 0 0; 
+                                        vertical-align: middle;"> 
+                                        <figure>
+                                           <img src="https://i.ibb.co/yqGnXZq/store2.png" alt="STORE" border="0" width="100%" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; max-width:178px; width: 100%; height:auto; display: inline-block; padding: 0 0 0 0; Margin: 0 0 0 0; "/>
+                                        </figure>
+                                             
+                                      </div>
+                              
+                                      <!--<![endif]-->
+        
+                                      <div id="sliders2" class="slidr2-sliders">
+                                          <div id="overflow2">
+                                              <div class="image2">
+                                                  <div>                                          
+                                                    <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:100%; max-width: 434px;" >
+                                                        <tr>
+                                                            <td align="center" style="padding:38px 25px 38px 25px; Margin: 0 0 0 0; text-align: center;">
+                                                                <div style="padding:0; margin: 0 auo;">                <!--[if !gte mso 9]> <!-- -->
+                                                                <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;"/> 
+                                                              <!-- <![endif]-->   
+                                                              <!-- [if gte mso 9]> 
+                                                                  <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="Nice img1" border="0" width="355" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 355px;"/>  
+                                                              <![endif]-->  
+                                                               
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td  style="padding:38px 25px 38px 25px; Margin: 0 0 0 0; text-align: center;">
+                                                                 <div style="padding:0; margin: 0;">                <!--[if !gte mso 9]> <!-- -->
+                                                                <img src="https://i.ibb.co/fSbtCpx/img6.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;"/> 
+                                                               <!-- <![endif]-->   
+                                                               <!--[if gte mso 9]> 
+                                                                  <img src="https://i.ibb.co/fSbtCpx/img6.png" alt="Nice img1" border="0" width="355" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 355px;"/>  
+                                                               <![endif]-->  
+                                                               
+                                                                </div>
+                                                                
+                                                            </td>
+                                                        </tr>
+                                                    </table>       
+                                                  </div>
+                                                  <div>                                          
+                                                    <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:100%; max-width: 434px;" >
+                                                        <tr>
+                                                            <td  style="padding:38px 25px 38px 25px; Margin: 0 0 0 0; text-align: center;">
+                                                                <div style="padding:0; margin: 0 auo;">               <!--[if !gte mso 9]> <!-- -->
+                                                                    <img src="https://i.ibb.co/fSbtCpx/img6.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;"/> 
+                                                               <!--   <![endif]-->   
+                                                               <!--[if gte mso 9]> 
+                                                                  <img src="https://i.ibb.co/fSbtCpx/img6.png" alt="Nice img1" border="0" width="355" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 355px;"/>  
+                                                               <![endif]-->  
+                                                              
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td  style="padding:38px 25px 38px 25px; Margin: 0 0 0 0; text-align: center;">
+                                                                <div style="padding:0; margin: 0 auo;">               <!--[if !gte mso 9]> <!-- -->
+                                                                <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;"/> 
+                                                               <!-- <![endif]-->   
+                                                               <!--[if gte mso 9]> 
+                                                                  <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="Nice img1" border="0" width="355" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 355px;"/>  
+                                                               <![endif]-->  
+                                                               
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>                      
+                                                  </div>
+                                                  <div>                                          
+                                                    <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:100%; max-width: 434px;" >
+                                                        <tr>
+                                                            <td  style="padding:38px 25px 38px 25px; Margin: 0 0 0 0; text-align: center;">
+                                                                 
+                                                                <div style="padding:0; margin: 0 auo;">                <!--[if !gte mso 9]> <!-- -->
+                                                                <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;"/> 
+                                                              <!-- <![endif]-->   
+                                                               <!-- [if gte mso 9]> 
+                                                                  <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="Nice img1" border="0" width="355" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 355px;"/>  
+                                                               <![endif]-->  
+                                                               
+                                                                  
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td  style="padding:38px 25px 38px 25px; Margin: 0 0 0 0;text-align: center;">
+                                                              <div style="padding:0; margin: 0 auo;">                <!--[if !gte mso 9]> <!-- -->
+                                                                <img src="https://i.ibb.co/fSbtCpx/img6.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;"/> 
+                                                               <!-- <![endif]-->   
+                                                               <!--[if gte mso 9]> 
+                                                                  <img src="https://i.ibb.co/fSbtCpx/img6.png" alt="Nice img1" border="0" width="355" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 355px;"/>  
+                                                               <![endif]-->  
+                                                               
+                                                               
+                                                                </div>
 
-                                    <div id="sliders2" class="slidr2-sliders">
-                                        <div id="overflow2">
-                                            <div class="image2">
-                                                <article>                                          
-                                                  <table  valign="center" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:100%; max-width: 434px;" >
-                                                      <tr>
-                                                          <td  style="padding:38px 0 38px 0; Margin: 0 0 0 0;">
-                                                              <div style="padding: :0; margin: 0 auo;">                 
-                                                                  <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;">
-                                                              </div>
-                                                          </td>
-                                                      </tr>
-                                                      <tr>
-                                                          <td  style="padding:38px 0 38px 0; Margin: 0 0 0 0;">
-                                                              <div style="padding: :0; margin: 0 auo;">                 
-                                                                  <img src="https://i.ibb.co/fSbtCpx/img6.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;">
-                                                              </div>
-                                                          </td>
-                                                      </tr>
-                                                  </table>                      
-                                                </article>
-                                                <article>                                          
-                                                  <table  valign="center" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:100%; max-width: 434px;" >
-                                                      <tr>
-                                                          <td  style="padding:38px 0 38px 0; Margin: 0 0 0 0;">
-                                                              <div style="padding: :0; margin: 0 auo;">                 
-                                                                  <img src="https://i.ibb.co/fSbtCpx/img6.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;">
-                                                              </div>
-                                                          </td>
-                                                      </tr>
-                                                      <tr>
-                                                          <td  style="padding:38px 0 38px 0; Margin: 0 0 0 0;">
-                                                              <div style="padding: :0; margin: 0 auo;">                 
-                                                                  <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;">
-                                                              </div>
-                                                          </td>
-                                                      </tr>
-                                                  </table>                      
-                                                </article>
-                                                <article>                                          
-                                                  <table  valign="center" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:100%; max-width: 434px;" >
-                                                      <tr>
-                                                          <td  style="padding:38px 0 38px 0; Margin: 0 0 0 0;">
-                                                              <div style="padding: :0; margin: 0 auo;">                 
-                                                                  <img src="https://i.ibb.co/fSbtCpx/img6.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;">
-                                                              </div>
-                                                          </td>
-                                                      </tr>
-                                                      <tr>
-                                                          <td  style="padding:38px 0 38px 0; Margin: 0 0 0 0;">
-                                                              <div style="padding: :0; margin: 0 auo;">                 
-                                                                  <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;">
-                                                              </div>
-                                                          </td>
-                                                      </tr>
-                                                  </table>                      
-                                                </article>
-                                                <article>                                          
-                                                  <table  valign="center" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:100%; max-width: 434px;" >
-                                                      <tr>
-                                                          <td  style="padding:38px 0 38px 0; Margin: 0 0 0 0;">
-                                                              <div style="padding: :0; margin: 0 auo;">                 
-                                                                  <img src="https://i.ibb.co/fSbtCpx/img6.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;">
-                                                              </div>
-                                                          </td>
-                                                      </tr>
-                                                      <tr>
-                                                          <td  style="padding:38px 0 38px 0; Margin: 0 0 0 0;">
-                                                              <div style="padding: :0; margin: 0 auo;">                 
-                                                                  <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;">
-                                                              </div>
-                                                          </td>
-                                                      </tr>
-                                                  </table>                      
-                                                </article>
-                                                <article>                                          
-                                                  <table  valign="center" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:100%; max-width: 434px;" >
-                                                      <tr>
-                                                          <td  style="padding:38px 0 38px 0; Margin: 0 0 0 0;">
-                                                              <div style="padding: :0; margin: 0 auo;">                 
-                                                                  <img src="https://i.ibb.co/fSbtCpx/img6.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;">
-                                                              </div>
-                                                          </td>
-                                                      </tr>
-                                                      <tr>
-                                                          <td  style="padding:38px 0 38px 0; Margin: 0 0 0 0;">
-                                                              <div style="padding: :0; margin: 0 auo;">                 
-                                                                  <img src="https://i.ibb.co/3WFRpjW/img5.png" alt="Nice img1" border="0" width="100%" height="auto" style=" font-size: 20px; line-height: 24px; font-weight: bold; font-family: 'Poppins',sans-serif, Arial, Helvetica; color: #000000; border: none; width: 100%; max-width: 355px;">
-                                                              </div>
-                                                          </td>
-                                                      </tr>
-                                                  </table>                      
-                                                </article>
-                                              
-                                            </div>
-                                        </div>
-                                    </div>
-<!--
-                                  </td>
-                                  
-                                </tr>
-                              </table> 
+                                                            </td>
+                                                        </tr>
+                                                    </table>                      
+                                                  </div>
+                                                                                       
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div> 
+                                </td> 
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                    <!-- End Gallery2 -->
+        
+                    <!-- About us -->
+                        <tr>
+                          <td align="center" style="padding:60px 25px 30px 25px; Margin: 0 0 0 0; background-color: #ffffff;">
+                             <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:100%; max-width: 450px;" >
+                              <tr>
+                                <td>
+                                  <h3 style=" text-align: center; margin: 0; font-weight: 700; font-size: 32px; line-height: 32px; letter-spacing: -0.01em; color: #000000;"> ABOUT US </h3>
+                                    <p align="center" style="color:#000000;font-size: 12px; line-height:14px; font-family: 'Poppins',sans-serif, Arial, Helvetica; font-weight:light; Margin:0;padding:40px 0 0 0; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                                </td>
+                              </tr>
+                            </table>
+                                        
+                          </td>
+                        </tr>
+                    <!-- End About us -->
+        
+                    <!-- Footer -->
+        
+                        <tr>
+                          <td style="padding-top: 40px; padding-right: 0; padding-bottom: 100px; padding-left: 0; background-color: #ffffff; width: 100%;" align="center">
+                            
+                            <table border="0" cellspacing="0" role="presentation" style="background-color: #ffffff;" align="center">
+                              <tr>
+        
+                                <td style="padding:0 0 0 0; Margin: 0 12.5px 0 12.5px; width: 25px; max-width: 25px; height: 25px; max-height: 25px; border-radius: 12.5px; display: inline-block;" >
+                                  <img alt="fb linck" src="https://i.ibb.co/Y3H3B3f/Facebook.png" width="25" border="0" style="color: #000000; display: block; font-family:'Montserrat',sans-serif, Arial;; font-size: 10px; max-width: 100%; width: 100%;"/>
+                                </td>
+        
+                                <td style="padding:0 0 0 0; Margin: 0 12.5px 0 12.5px; width: 25px; max-width: 25px; height: 25px; max-height: 25px; border-radius: 12.5px; display: inline-block;" >
+                                  <img alt="inst linck" src="https://i.ibb.co/YR3jK54/Instagram.png" width="25" border="0" style="color: #000000; display: block; font-family:'Montserrat',sans-serif, Arial;; font-size: 10px; max-width: 100%; width: 100%;"/>
+                                </td>
+        
+                                <td style="padding:0 0 0 0; Margin: 0 12.5px 0 12.5px; width: 25px; max-width: 25px; height: 25px; max-height: 25px; border-radius: 12.5px; display: inline-block;" >
+                                  <img alt="tvit linck" src="https://i.ibb.co/f0qpS9V/Whatsapp.png" width="25" border="0" style="color: #000000; display: block; font-family:'Montserrat',sans-serif, Arial;; font-size: 10px; max-width: 100%; width: 100%;"/>
+                                </td>
+        
+                                <td style="padding:0 0 0 0; Margin: 0 12.5px 0 12.5px; width: 25px; max-width: 25px; height: 25px; max-height: 25px; border-radius: 12.5px; display: inline-block;" >
+                                  <img alt="mail linck" src="https://i.ibb.co/QJjtMSR/Tumblr.png" width="25" border="0" style="color: #000000; display: block; font-family:'Montserrat',sans-serif, Arial;; font-size: 10px; max-width: 100%; width: 100%;"/>
+                                </td>
+        
+                              </tr>
+                            </table>
+        
+                          </td>
+                        </tr>
+                           
+                      </table>
+                      </div>
+                     
+                   
+                  <!--[if gte mso 9]>
+                    </textbox>
+                    </fill>
+                    </v:rect> 
+                  <![endif]-->
 
-                            </article> 
--->
-                      </td> 
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-          <!-- End Gallery2 -->
-
-          <!-- About us -->
-              <tr>
-                <td align="center" style="padding:60px 90px 30px 90px; Margin: 0 0 0 0; background-color: #ffffff;">
-                  <h3 style="margin: 0; font-weight: 700; font-size: 24px; line-height: 24px; letter-spacing: -0.01em; color: #000000;"> ABOUT US </h3>
-                   <p align="center" style="color:#000000;font-size: 12px; line-height:14px; font-family: 'Poppins',sans-serif, Arial, Helvetica; font-weight:light; Margin:0;padding:40px 0 0 0; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>            
-                </td>
-              </tr>
-          <!-- End About us -->
-
-
-
-          <!-- Footer -->
-
-              <tr id="footer">
-                <td style="padding-top: 40px; padding-right: 0; padding-bottom: 100px; padding-left: 0; background-color: #ffffff;" align="center">
-                  
-                  <table border="0" cellspacing="0" role="presentation" style="background-color: #ffffff;" align="center">
-                    <tr>
-                      <td style="padding:0 0 0 0; Margin: 0 12.5px 0 12.5px; width: 25px; max-width: 25px; height: 25px; max-height: 25px; border-radius: 12.5px;display: inline-block;" >
-                        <img alt="fb linck" src="https://i.ibb.co/Y3H3B3f/Facebook.png" width="25" border="0" style="color: #000000; display: block; font-family:'Montserrat',sans-serif, Arial;; font-size: 10px; max-width: 100%; width: 100%;"/>
-                      </td>
-
-                      <td style="padding:0 0 0 0; Margin: 0 12.5px 0 12.5px; width: 25px; max-width: 25px; height: 25px; max-height: 25px; border-radius: 12.5px;display: inline-block;" >
-                        <img alt="inst linck" src="https://i.ibb.co/YR3jK54/Instagram.png" width="25" border="0" style="color: #000000; display: block; font-family:'Montserrat',sans-serif, Arial;; font-size: 10px; max-width: 100%; width: 100%;"/>
-                      </td>
-
-                      <td style="padding:0 0 0 0; Margin: 0 12.5px 0 12.5px; width: 25px; max-width: 25px; height: 25px; max-height: 25px; border-radius: 12.5px;display: inline-block;" >
-                        <img alt="tvit linck" src="https://i.ibb.co/f0qpS9V/Whatsapp.png" width="25" border="0" style="color: #000000; display: block; font-family:'Montserrat',sans-serif, Arial;; font-size: 10px; max-width: 100%; width: 100%;"/>
-                      </td>
-
-
-                      <td style="padding:0 0 0 0; Margin: 0 12.5px 0 12.5px; width: 25px; max-width: 25px; height: 25px; max-height: 25px; border-radius: 12.5px;display: inline-block;" >
-                        <img alt="mail linck" src="https://i.ibb.co/QJjtMSR/Tumblr.png" width="25" border="0" style="color: #000000; display: block; font-family:'Montserrat',sans-serif, Arial;; font-size: 10px; max-width: 100%; width: 100%;"/>
-                      </td>
-                    </tr>
-                  </table>
-
-                </td>
-              </tr>
-                 
-            </table>
-
-          </td>
-        </tr>
-  
-        <!--[if mso]>
-        </v:textbox>
-        </v:rect>
-        <![endif]-->
-      
-      </table>
-
-    <!--[if (gte mso 9)|(IE)]>
-    </td>
-    </tr>
+             
+        
+                    </td>
+                  </tr>
+                </table>
+                
+              </td>
+            </tr>
+          </table>
+         
+        </td>
+      </tr>
     </table>
-    <![endif]-->
-
-    
-    </center>
   </body>
 </html>
 
